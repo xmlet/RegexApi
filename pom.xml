@@ -144,13 +144,48 @@
 
     <!-- ****************************************************************** -->
 
+    <packaging>jar</packaging>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>
+        Uses XsdAsmFaster to generate a fluent API that allows the manipulation of the regex language.
+    </description>
+    <url>https://github.com/xmlet/RegexApi</url>
+    <licenses>
+        <license>
+            <name>MIT license</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Luís Duarte</name>
+            <email>39378@alunos.isel.ipl.pt</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git@github.com:xmlet/RegexApi.git</connection>
+        <developerConnection>scm:git:git@github.com:xmlet/RegexApi.git</developerConnection>
+        <url>git@github.com:xmlet/RegexApi.git</url>
+        <tag>regexApi-1.0.0</tag>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <!-- ***************************************************************** -->
 
     <dependencies>
         <dependency>
             <groupId>com.github.xmlet</groupId>
             <artifactId>xsdAsmFaster</artifactId>
-            <version>1.0.4-SNAPSHOT</version>
+            <version>1.0.4</version>
             <scope>compile</scope>
         </dependency>
 
